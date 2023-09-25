@@ -1,6 +1,6 @@
 function bigSortAnimation(el) {
   const data = {
-    "Input: Listens": [
+    "Input": [
       [
         { id: 0, sId: 442 },
         { id: 1, sId: 486 },
