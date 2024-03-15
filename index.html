@@ -1,24 +1,49 @@
-
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
   <title>CS 145</title>
-
+  
   <!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- Custom styles for this template -->
   <link href="css/main.css" rel="stylesheet">
-
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
+  <!-- Inline styles -->
+  <style>
+    .key-dates {
+      margin-left: 20px; /* Space between course overview and key dates */
+    }
+    address {
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #f8f9fa; /* Light grey background for the table */
+    }
+
+    th, td {
+      border: 1px solid #666666; /* Dark grey border */
+      padding: 8px; /* Add some padding to cells */
+      text-align: left; /* Align text to the left */ 
+    }
+    th {
+      background-color: #007bff; /* Slightly darker grey for headers */
+    }
+    tr:nth-child(odd) {
+      background-color: #f2f2f2; /* Light grey for odd rows */
+    }
+    tr:nth-child(even) {
+      background-color: #ffffff; /* White for even rows */
+    }
+  header.bg-primary {
+      background-color: #5f9ea0 !important;; /* This is CadetBlue, a more pleasant blue */
+    }
+  </style>
 </head>
 
 <body>
@@ -49,173 +74,273 @@
           <li class="nav-item" id="honorNav">
             <a class="nav-link" href="#honor">Honor Code</a>
           </li>
-<!--           <li class="nav-item" id="projectsNav">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item" id="staffNav"> 
-            <a class="nav-link" href="#staff">Staff</a>
-          </li> -->
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Header -->
-  <header class="bg-primary py-3">
-    <div class="container h-100">
-      <div class="row h-100 align-items-center">
-        <div class="col-lg-12">
-          <h1 class="display-5 text-white mt-5 mb-2">Intro to Big Data Systems</h1>
-          <p class="lead mb-4 text-white-50">Introduction to the use, design, and implementation of database and data-intensive systems.</p>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Page Content -->
+<!-- Header -->
+<header class="bg-primary py-3">
   <div class="container">
-
-    <div class="row section" id="home">
-      <div class="col-md-8">
-        <h2>Course Overview</h2>
-        <hr>
-        <p>This course covers how to build data applications, and key principles on how to build and scale big data systems. Taught by <a href="https://www.linkedin.com/in/shiva-shivakumar-902a681b/">Shiva Shivakumar</a></p>
-        <p>A few key topics:</p>
-
-<ol>
-<li><b>How to use a database and SQL (Structured Query Language)?</b> 
-Spotify stores and manages 1 Billion+ songs/podcasts for 100M+ users and 10M+ artists. Let’s build Spotify’s features with SQL. E.g., artist search, popular songs, song recommendations.  Intro to SQL alternatives.
-<li> <b>How to optimize queries with well-designed algorithms and data structures?</b>
-Speed up Spotify queries with row and column stores, parallelism, BigSort, Hashing. 
-See how OpenAI’s GPT and Google Maps index and query complex data types like text and geo data.
-<li><b>How to build reliable Transactions?</b>
-Ticketmaster-like orgs sell Taylor Swift concert tickets to 1 million+ fans across ~50 concerts in transactions – no double selling, guaranteeing tickets after payment. How does it work?
-<li><b>How distributed big data systems scale?</b>
-Lessons from Google Ads and Discord in scaling.
-</ol>
-
-
-      </div>
-
-
-      <div class="schedule" id="schedule">
-        <h2> Schedule </h2>
-	<iframe src="https://docs.google.com/spreadsheets/d/1Feuer27UtTOxEekz18dQYcm8hflAjPrvPs9jGP89IgI/edit#gid=0" style="border: 0" width="1200" height="1200" frameborder="0" scrolling="no"></iframe>
-        <hr>
-
-
-      <div class="col-md-4">
-        <h2>Key Dates</h2>
-        <hr>
-        <address>
-          <strong>Lectures: Tues/Thurs</strong>
-          <br>4:30 PM - 5:50 PM
-          <br>NVIDIA Auditorium
-          <br>
-        </address>
-        <address>
-          <strong>Exam#1: Tuesday, November 2</strong>
-          <br> Class Timings (4:30 - 5:50 PM)
-          <br>
-        </address>
-        <address>
-          <strong>Exam#2: Monday, December 11</strong>
-          <br> 7-10 PM
-          <br>
-        </address>
+    <div class="row align-items-center">
+      <div class="col-lg-12">
+        <h1 class="display-5 text-white mt-3 mb-2">Intro to Big Data Systems</h1>
+        <p class="lead mb-3 text-white-50">Introduction to the use, design, and implementation of database and data-intensive systems.</p>
       </div>
     </div>
-
-   
-     
-    <div class="row section" id="logistics">
-      <div class="col-md-12">
-        <h2 >Course Logistics and Policies</h2>
-        <hr>
-        <p><b>Prerequisites</b> CS 103 and CS 107 (or equivalent). Basic knowledege of OS and algorithms (in RAM)</p>
-
-        <p><b>Grading</b> Projects: 40% (10 + 30), Exam #1: 20%, Exam #2: 35%, PSETs: 5%</p>
-        <p>For students taking the course on a credit/no-credit basis: you need to score equivalent to at least a C grade to pass the course.
-          We cannot provide the exact score threshold since the course is curved at the end of the quarter.</p>
-        <p>We will be offering extra credit for in class participation.</p>
-
-        <p>
-          <b>Ed and Gradescope</b>: please access course Ed and Gradescope on the canvas tab.
-        </p>
-
-        </p>
-        <p>
-          <b>Conflict in exams or course schedule</b> Due to the large course enrollment number,
-          we won’t be able to accommodate alternate exam schedules for those who have exam
-          conflicts (both midterm and final). Please make sure you do not have a conflict in
-          exam schedules when enrolling in CS 145.
-        </p>
-
-        <p>
-          <b>Late Days</b> You are allowed a total of <b>two</b> late days
-          shared between all project deadlines. You do not lose any credit when
-          using a late day. If you run out of late days and submit after the
-          deadline, you receive a 0. (Late days can only be applied for projects.)
-        </p>
-
-        <p>
-          <b>Lectures</b> Lectures occur on Tues/Thurs 4:30-5:50 p.m. in NVIDIA Auditorium. 
-          NOTE that while attendance is not mandatory, we will be giving out extra credit for students with insightful in-class participation.
-        </p>
-        <p>
-          <b>Lecture Videos</b> Lecture videos will be recorded and posted on <a href="https://canvas.stanford.edu/">Canvas</a>.
-        </p>
-      </div>
-
-    </div>
-
-    <div class="row section" id="honor" style="padding-top: 60px;">
-      <div class="col-md-12">
-        <h2>Honor Code/Collaboration Policy</h2>
-        <hr>
-        <p>
-          Students must adhere to <a href="https://communitystandards.stanford.edu/policies-and-guidance/honor-code">The Stanford Honor Code</a> 
-          and <a href="http://web.stanford.edu/class/archive/cs/cs106b/cs106b.1164/handouts/honor-code.pdf">The Stanford Honor Code</a> as it  pertains to CS courses.
-        </p>
-        <p>
-          We encourage students to form study groups. Students may discuss and work on homework problems in groups. 
-          However, each student must write down the solution independently, and without referring to written notes from the joint session. 
-        </p>
-        <p>
-          It is an honor code violation to copy, refer to, or look at written or code solutions from a previous year, 
-          including but not limited to: official solutions from a previous year, solutions posted online, and solutions 
-          you or someone else may have written up in a previous year. Furthermore, it is an honor code violation to post 
-          your assignment solutions online, such as on a public git repo.
-        </p>
-        
-        <p>
-          The teaching staff will be using plagiarism detection software and if we have reason to believe that you are in 
-        violation of the honor code, we will follow the university policy to report it.
-        </p>
-        
-      </div>
-      
-    </div>
-
-  
-  
   </div>
+</header>
+
+
+<!-- Page Content -->
+<div class="container">
+    
+  <!-- Course Overview and Key Dates -->
+  <div class="row section" id="home">
+    <div class="col-md-8">
+      <h2>Course Overview</h2>
+      <hr>
+      <p>This course covers how to build data applications, and key principles on how to build and scale big data systems. Taught by <a href="https://www.linkedin.com/in/shiva-shivakumar-902a681b/">Shiva Shivakumar</a>.</p>
+      <p>A few key topics:</p>
+      <ol>
+        <li><b>How to use a database and SQL (Structured Query Language)?</b> 
+        Spotify stores and manages 1 Billion+ songs/podcasts for 100M+ users and 10M+ artists. Let’s build Spotify’s features with SQL. E.g., artist search, popular songs, song recommendations. Intro to SQL alternatives.</li>
+        <li> <b>How to optimize queries with well-designed algorithms and data structures?</b>
+        Speed up Spotify queries with row and column stores, parallelism, BigSort, Hashing. 
+        See how OpenAI’s GPT and Google Maps index and query complex data types like text and geo data.</li>
+        <li><b>How to build reliable Transactions?</b>
+        Ticketmaster-like orgs sell Taylor Swift concert tickets to 1 million+ fans across ~50 concerts in transactions – no double selling, guaranteeing tickets after payment. How does it work?</li>
+        <li><b>How distributed big data systems scale?</b>
+        Lessons from Google Ads and Discord in scaling.</li>
+      </ol>
+
+    </div>
+    <div class="col-md-4">
+      <h2>Key Dates</h2>
+      <hr>
+      <address>
+        <strong>Lectures: Tues/Thurs</strong><br>
+        4:30 PM - 5:50 PM<br>
+        NVIDIA Auditorium<br>
+      </address>
+      <address>
+        <strong>Exam#1: Tuesday, November 2</strong><br>
+        Class Timings (4:30 - 5:50 PM)<br>
+      </address>
+      <address>
+        <strong>Exam#2: Monday, December 11</strong><br>
+        7-10 PM<br>
+      </address>    </div>
+  </div>
+
+  <!-- Course Logistics and Policies -->
+  <div class="row section" id="logistics">
+    <div class="col-md-12">
+      <h2 >Course Logistics and Policies</h2>
+      <hr>
+      <p><b>Prerequisites</b> CS 103 and CS 107 (or equivalent). Basic knowledege of OS and algorithms (in RAM)</p>
+    
+      <p><b>Grading</b> Projects: 40% (10 + 30), Exam #1: 20%, Exam #2: 35%, PSETs: 5%</p>
+      <p>For students taking the course on a credit/no-credit basis: you need to score equivalent to at least a C grade to pass the course.
+        We cannot provide the exact score threshold since the course is curved at the end of the quarter.</p>
+      <p>We will be offering extra credit for in class participation.</p>
+    
+      <p>
+        <b>Ed and Gradescope</b>: please access course Ed and Gradescope on the canvas tab.
+      </p>
+    
+      </p>
+      <p>
+        <b>Conflict in exams or course schedule</b> Due to the large course enrollment number,
+        we won’t be able to accommodate alternate exam schedules for those who have exam
+        conflicts (both midterm and final). Please make sure you do not have a conflict in
+        exam schedules when enrolling in CS 145.
+      </p>
+    
+      <p>
+        <b>Late Days</b> You can use a total of <b>two </b> late days (24 hours each, not pro-rated)
+        shared between both project deadlines. You do not lose any credit when
+        using a late day. If you run out of late days and need additional time, you can submit after the
+        deadline -- you will receive a 10% deduction for the 1st 24 hours after the deadline, 25% deduction for the next 24 hours, and zero credit after that. It's by 24 hours, no proration (for seconds, hours, etc)
+      </p>
+    
+      <p>
+        <b>Lectures</b> Lectures occur on Tues/Thurs 4:30-5:50 p.m. in NVIDIA Auditorium. 
+        NOTE that while attendance is not mandatory, we will be giving out extra credit for students with insightful in-class participation.
+      </p>
+      <p>
+        <b>Lecture Videos</b> Lecture videos will be recorded and posted on <a href="https://canvas.stanford.edu/">Canvas</a>.
+      </p>
+    </div>
+  </div>
+
+  <!-- Honor Code/Collaboration Policy -->
+  <div class="row section" id="honor">
+    <div class="col-md-12">
+      <h2>Honor Code/Collaboration Policy</h2>
+  <hr>
+  <p>
+    Students must adhere to <a href="https://communitystandards.stanford.edu/policies-and-guidance/honor-code">The Stanford Honor Code</a> 
+    and <a href="http://web.stanford.edu/class/archive/cs/cs106b/cs106b.1164/handouts/honor-code.pdf">The Stanford Honor Code</a> as it  pertains to CS courses.
+  </p>
+  <p>
+    We encourage students to form study groups. Students may discuss and work on homework problems in groups. 
+    However, each student must write down the solution independently, and without referring to written notes from the joint session. 
+  </p>
+  <p>
+    It is an honor code violation to copy, refer to, or look at written or code solutions from a previous year, 
+    including but not limited to: official solutions from a previous year, solutions posted online, and solutions 
+    you or someone else may have written up in a previous year. Furthermore, it is an honor code violation to post 
+    your assignment solutions online, such as on a public git repo.
+  </p>
+  
+  <p>
+    The teaching staff will be using plagiarism detection software and if we have reason to believe that you are in 
+  violation of the honor code, we will follow the university policy to report it.
+  </p>
+    </div>
+  </div>
+  
+
+  <div class="row section" id="schedule">
+
+    <div class="col-md-12">
+      <h2>Schedule</h2>
+  <hr>
+<table border="1" style="width: 80%; border-color: #666; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="background-color: #e6f7ff;">Dates</th>
+      <th style="background-color: #e6f7ff;">Topics</th>
+      <th style="background-color: #e6f7ff;">Lectures</th>
+      <th style="background-color: #e6f7ff;">Run Colabs</th>
+      <th style="background-color: #e6f7ff;">Reading from Course Notes</th>
+      <th style="background-color: #e6f7ff;">Events</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>9/26</td>
+      <td>SQL basics</td>
+      <td>Intro/Logistics, SQL slides</td>
+      <td> <a href="https://colab.research.google.com/drive/19raF0_aeJs-dQdQC9tZ8GhveXVhAIdji#scrollTo=TmVf9qHpF4AV"> Colab #1</a> Section 1 (SQL)</td>
+      <td>Pg 1-16 </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>9/28</td>
+      <td>SQL labs (JOINs, Aggregates)</td>
+      <td>Lecture 1 slides, SQL Project 1 released on Ed</td>
+      <td><a href="https://colab.research.google.com/drive/19raF0_aeJs-dQdQC9tZ8GhveXVhAIdji#scrollTo=TmVf9qHpF4AV">Colab #1</a> Section 1 (SQL)</td>
+      <td>Pg 17-23 </td>
+      <td>SQL Project 1 released on Ed. Signup for GCP credits</td>
+    </tr>
+    <tr>
+      <td>10/3</td>
+      <td>SQL intermediate (Common Table Expressions, Window functions)</td>
+      <td>SQL slides</td>
+      <td><a href="https://colab.research.google.com/drive/19raF0_aeJs-dQdQC9tZ8GhveXVhAIdji#scrollTo=TmVf9qHpF4AV">Colab #1</a> Section 2,3 (SQL)</td>
+      <td>Pg 24-36 </td>
+      <td>PSET 0 Due (Pre-reqs)</td>
+    </tr>
+    <tr>
+      <td>10/5</td>
+      <td>Hybrid of SQL and Alternatives</td>
+      <td>SQL slides</td>
+      <td><a href="https://colab.research.google.com/drive/19raF0_aeJs-dQdQC9tZ8GhveXVhAIdji#scrollTo=TmVf9qHpF4AV">Colab #1</a> Section 4 (SQL)</td>
+      <td>Finish Section 1</td>
+      <td>PSET 1 Due (Basic SQL)</td>
+    </tr>
+    <tr>
+      <td>10/10</td>
+      <td>Systems Primer & nanoDB Storage, BigSort, Hashing Algorithms</td>
+      <td>nanoDB slides</td>
+      <td><a href="https://colab.research.google.com/drive/1qVecnI0StAxPlHHHLdDtnqsXtF7g4Uvj#scrollTo=GIGquxTSjsFK">Colab #2</a> Section 1 (NanoDB) </a></td>
+      <td>Cases 6, 6.1, 6.2</td>
+      <td>PSET 2 Due</td>
+    </tr>
+    <tr>
+      <td>10/12</td>
+      <td>IO Complexity, Basic Indexing</td>
+      <td>nanoDB slides</td>
+      <td><a href="https://colab.research.google.com/drive/1DFffM1Kb3_GDaplP7SJvyIO7uLFPLRr8">Colab #3</a> (Hashing)</a></td>
+      <td>Cases 7-8.3</td>
+      <td>SQL Project 1 Due.
+        SQL Project 2 Released</td>
+    </tr>
+    <tr>
+      <td>10/17</td>
+      <td>Intermediate Indexing</td>
+      <td>nanoDB slides</td>
+      <td><a href="https://colab.research.google.com/drive/1qVecnI0StAxPlHHHLdDtnqsXtF7g4Uvj#scrollTo=GIGquxTSjsFK">Colab #2</a> Section 2 (NanoDB)</a></td>
+      <td>Finish Section 2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>10/19</td>
+      <td>JOIN Algorithms</td>
+      <td>nanoDB slides</td>
+      <td><a href="https://colab.research.google.com/drive/1qVecnI0StAxPlHHHLdDtnqsXtF7g4Uvj#scrollTo=GIGquxTSjsFK">Colab #2</a> Section 3 (NanoDB)</a></td>
+      <td>Cases 10.1, 10.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>10/24</td>
+      <td> </td>
+      <td>nanoDB slides</td>
+      <td><a href="https://colab.research.google.com/drive/1qVecnI0StAxPlHHHLdDtnqsXtF7g4Uvj#scrollTo=GIGquxTSjsFK">NanoDB</a></td>
+      <td>Finish Section 3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>10/26</td>
+      <td>File systems, MapReduce/Spark. Tips for Project 2</td>
+      <td>Spark slides</td>
+      <td>Lecture</td>
+      <td></td>
+      <td>PSET #3 due -- no extensions. SQL Project 2 Proposal due</td>
+    </tr>
+    <tr>
+      <td>10/31</td>
+      <td>Midterm review</td>
+      <td>Midterm review</td>
+      <td>Lecture</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>11/2</td>
+      <td>Midterm in class</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+<p>
+
+
+</div>
+</div> <!-- End of container -->
 
    
   <!-- /.container -->
 
   <!-- Footer -->
-  <footer class="py-4 bg-dark">
+  <footer class="py-4 bg-white">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Stanford University 2023</p>
+      <p class="m-0 text-center text-black">Copyright &copy; Stanford University 2023</p>
     </div>
     <!-- /.container -->
   </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+<!-- Bootstrap core JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="main.js"></script>
 
 </body>
