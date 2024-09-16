@@ -200,82 +200,122 @@
   </p>
     </div>
   </div>
-  
-<div class="row section" id="schedule">
+  <div class="row section" id="schedule">
     <div class="col-md-12">
         <h2>Schedule</h2>
         <hr>
-        <table border="1" style="width: 80%; border-color: #666; border-collapse: collapse;">
+        <style>
+            table {
+                width: 80%;
+                border-collapse: collapse;
+                font-family: Arial, sans-serif;
+                margin: 0 auto;
+                background-color: #f9f9f9;
+            }
+            th, td {
+                padding: 12px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            th {
+                background-color: #e0f2fe;
+                font-weight: bold;
+                text-align: center;
+            }
+            td {
+                text-align: left;
+                font-size: 14px;
+            }
+            tr:hover {
+                background-color: #f1f1f1;
+            }
+            .unit-row {
+                background-color: #e6f7ff;
+                text-align: left;
+                padding: 15px;
+                font-weight: bold;
+            }
+            .unit-row a {
+                color: #0073e6;
+                text-decoration: none;
+            }
+            .unit-row a:hover {
+                text-decoration: underline;
+            }
+            .center {
+                text-align: center;
+            }
+        </style>
+        <table>
             <thead>
                 <tr>
-                    <th style="background-color: #e6f7ff;">Dates</th>
-                    <th style="background-color: #e6f7ff;">Topics</th>
-                    <th style="background-color: #e6f7ff;">Reading from Course Notes</th>
-                    <th style="background-color: #e6f7ff;">Events</th>
+                    <th>Dates</th>
+                    <th>Topics</th>
+                    <th>Reading from Course Notes</th>
+                    <th>Events</th>
                 </tr>
             </thead>
             <tbody>
                 <!-- Unit 1 -->
-                <tr>
-                    <td colspan="4" style="background-color: #e6f7ff; text-align:left;">
-                        <strong>Unit 1: SQL Basics</strong><br>
+                <tr class="unit-row">
+                    <td colspan="4">
+                        Unit 1: SQL Basics<br>
                         <strong>Slides:</strong> <a href="https://docs.google.com/presentation/d/1dLVZiJjborXc-rCSKfzUp_hjeR4hhv9jIyyegQyYL6s/edit#slide=id.gc6f73a04f_0_0">SQL</a><br>
                         <strong>Colabs:</strong> <a href="https://colab.research.google.com/drive/19raF0_aeJs-dQdQC9tZ8GhveXVhAIdji#scrollTo=TmVf9qHpF4AV">SQL Colab #1</a>
                     </td>
                 </tr>
                 <tr>
-                    <td>9/24</td>
+                    <td class="center">9/24</td>
                     <td>SQL basics</td>
                     <td>Pgs 1-16</td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td>9/26</td>
+                    <td class="center">9/26</td>
                     <td>SQL labs (JOINs, Aggregates)</td>
                     <td>Pgs 17-23</td>
                     <td>SQL Project 1 released on Ed. Signup for GCP credits</td>
                 </tr>
                 <tr>
-                    <td>10/1</td>
+                    <td class="center">10/1</td>
                     <td>SQL intermediate (Common Table Expressions, Window functions)</td>
                     <td>Pgs 24-36</td>
                     <td>PSET 0 Due (Pre-reqs)</td>
                 </tr>
                 <tr>
-                    <td>10/3</td>
+                    <td class="center">10/3</td>
                     <td>Hybrid of SQL and Alternatives</td>
                     <td>Finish Section 1</td>
                     <td>PSET 1 Due (Basic SQL)</td>
                 </tr>
                 <!-- Unit 2 -->
-                <tr>
-                    <td colspan="4" style="background-color: #e6f7ff; text-align:left;">
-                        <strong>Unit 2: Systems Primer & nanoDB</strong><br>
+                <tr class="unit-row">
+                    <td colspan="4">
+                        Unit 2: Systems Primer & nanoDB<br>
                         <strong>Slides:</strong> <a href="https://docs.google.com/presentation/d/1PCxSEvxso0eGMBuvA7nksjegO7JeAo_FnFV8bURW-nI/edit#slide=id.g24c78bbb61e_0_32">nanoDB system</a><br>
-                        <strong>Colabs:</strong> <a href="https://colab.research.google.com/drive/1qVecnI0StAxPlHHHLdDtnqsXtF7g4Uvj#scrollTo=GIGquxTSjsFK">NanoDB Colab #2</a>
-                      <a href=https://colab.research.google.com/drive/1DFffM1Kb3_GDaplP7SJvyIO7uLFPLRr8">Hashing Colab #3</a>
+                        <strong>Colabs:</strong> <a href="https://colab.research.google.com/drive/1qVecnI0StAxPlHHHLdDtnqsXtF7g4Uvj#scrollTo=GIGquxTSjsFK">NanoDB Colab #2</a>, <a href="https://colab.research.google.com/drive/1DFffM1Kb3_GDaplP7SJvyIO7uLFPLRr8">Hashing Colab #3</a>
                     </td>
                 </tr>
                 <tr>
-                    <td>10/8</td>
+                    <td class="center">10/8</td>
                     <td>Systems Primer & nanoDB Storage, BigSort, Hashing Algorithms</td>
                     <td>Cases 6, 6.1, 6.2</td>
                     <td>PSET 2 Due</td>
                 </tr>
                 <tr>
-                    <td>10/10</td>
+                    <td class="center">10/10</td>
                     <td>IO Complexity, Basic Indexing</td>
                     <td>Cases 7-8.3</td>
-                    <td>SQL Project 1 Due. <br>SQL Project 2 Released</td>
+                    <td>SQL Project 1 Due.<br>SQL Project 2 Released</td>
                 </tr>
                 <tr>
-                    <td>10/15</td>
+                    <td class="center">10/15</td>
                     <td>Intermediate Indexing</td>
                     <td>Finish Section 2</td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td>10/17</td>
+                    <td class="center">10/17</td>
                     <td>JOIN Algorithms</td>
                     <td>Cases 10.1, 10.2</td>
                     <td></td>
@@ -285,6 +325,7 @@
         <hr>
     </div>
 </div>
+
 
    
   <!-- /.container -->
