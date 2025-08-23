@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CS145 Fall 2025 — Weeks 1 to 10</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <section class="head">
+      <h1 class="title">CS145 Fall 2025</h1>
+      <p class="sub">Weeks 1 to 10 • Tue and Thu • Nov 4 holiday • Test 1 on Thu Oct 30</p>
+      <div class="chips">
+        <span class="chip pri">SQL</span>
+        <span class="chip pri">Systems</span>
+        <span class="chip pri">nanoDB</span>
+        <span class="chip sec">Transactions</span>
+        <span class="chip sec">Distributed Systems</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <table aria-label="Course schedule for CS145 Fall 2025">
+        <thead>
+          <tr>
+            <th>Week</th>
+            <th>Dates</th>
+            <th>Topics</th>
+            <th>Deliverables</th>
+            <th>Resources</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Week 1 -->
+          <tr>
+            <td class="wk">1</td>
+            <td class="dates">Sep 23, Sep 25</td>
+            <td class="topic">
+              <strong>Unit 1: SQL Basics</strong><br/>
+              Kickoff. SQLite and BigQuery intro. Mission briefing: gear up with SQL.
+            </td>
+            <td>
+              <span class="pill ok">Setup: Canvas • Gradescope • Ed</span>
+            </td>
+            <td>
+              <ul class="links">
+                <li>Notes Sec 1: <a href="https://docs.google.com/document/d/1EDgWiSkKrc8zVKu5zDHEvmgT7y57qCRguvJqOsO5nLc/edit#heading=h.aczyuw2yex2w">Google Doc</a></li>
+                <li>Slides: <a href="https://docs.google.com/presentation/d/1dLVZiJjborXc-rCSKfzUp_hjeR4hhv9jIyyegQyYL6s/edit#slide=id.gc6f73a04f_0_0">SQL Day 1 kickoff</a></li>
+                <li>Colab: <a href="https://colab.research.google.com/drive/19raF0_aeJs-dQdQC9tZ8GhveXVhAIdji#scrollTo=TmVf9qHpF4AV">SQL Colab #1</a></li>
+                <li>Video: <a href="https://sites.google.com/view/cs145-sql-companion-videos/home">SQL Companion</a></li>
+                <li>Projects hub: <a href="https://sites.google.com/view/cs145-projects-fa24/home">Project pages</a></li>
+                <li>Prereqs: <a href="https://sites.google.com/view/cs145-prereqs-fall24/home?authuser=0">Info</a></li>
+              </ul>
+            </td>
+          </tr>
+
+          <!-- Week 2 -->
+          <tr>
+            <td class="wk">2</td>
+            <td class="dates">Sep 30, Oct 2</td>
+            <td class="topic">
+              <strong>Unit 1: SQL Basics continued</strong><br/>
+              CTEs, subqueries, window functions. Debugging Text to SQL.
+            </td>
+            <td>
+              <span class="pill due">Oct 1 • PSET0</span>
+              <span class="pill due">Oct 3 • PSET1</span>
+            </td>
+            <td>
+              <ul class="links">
+                <li>Notes Sec 1: <a href="https://docs.google.com/document/d/1EDgWiSkKrc8zVKu5zDHEvmgT7y57qCRguvJqOsO5nLc/edit#heading=h.aczyuw2yex2w">Google Doc</a></li>
+                <li>Video: <a href="https://sites.google.com/view/cs145-howtousedbs/home">How to use DBs</a></li>
+                <li>Slides and Colab: see Week 1</li>
+              </ul>
+            </td>
+          </tr>
+
+          <!-- Week 3 -->
+          <tr>
+            <td class="wk">3</td>
+            <td class="dates">Oct 7, Oct 9</td>
+            <td class="topic">
+              <strong>Unit 2: Systems Primer</strong><br/>
+              RAM vs disk. BigSort. Hash partition. Foundations for nanoDB.
+            </td>
+            <td>
+              <span class="pill due">Oct 8 • PSET2</span>
+            </td>
+            <td>
+              <ul class="links">
+                <li>Notes Sec 2: <a href="https://docs.google.com/document/d/1EDgWiSkKrc8zVKu5zDHEvmgT7y57qCRguvJqOsO5nLc/edit#heading=h.aczyuw2yex2w">Google Doc</a></li>
+                <li>Slides: <a href="https://docs.google.com/presentation/d/1PCxSEvxso0eGMBuvA7nksjegO7JeAo_FnFV8bURW-nI/edit#slide=id.g24c78bbb61e_0_32">Systems</a></li>
+                <li>Colabs: <a href="https://colab.research.google.com/drive/1qVecnI0StAxPlHHHLdDtnqsXtF7g4Uvj#scrollTo=GIGquxTSjsFK">NanoDB #2</a> •
+                    <a href="https://colab.research.google.com/drive/1DFffM1Kb3_GDaplP7SJvyIO7uLFPLRr8">Hashing #3</a></li>
+              </ul>
+            </td>
+          </tr>
+
+          <!-- Week 4 -->
+          <tr>
+            <td class="wk">4</td>
+            <td class="dates">Oct 14, Oct 16</td>
+            <td class="topic">
+              <strong>Unit 3: nanoDB</strong><br/>
+              Indexes. Joins. Query planning.
+            </td>
+            <td>
+              <span class="pill due">Oct 12 • PSET3</span>
+              <span class="pill due">Oct 15 • Project 1</span>
+            </td>
+            <td>
+              <ul class="links">
+                <li>Notes Sec 3: <a href="https://docs.google.com/document/d/1EDgWiSkKrc8zVKu5zDHEvmgT7y57qCRguvJqOsO5nLc/edit#heading=h.aczyuw2yex2w">Google Doc</a></li>
+                <li>Slides: <a href="https://docs.google.com/presentation/d/1PCxSEvxso0eGMBuvA7nksjegO7JeAo_FnFV8bURW-nI/edit#slide=id.g24c78bbb61e_0_32">nanoDB</a></li>
+                <li>Colab: <a href="https://colab.research.google.com/drive/1o2uvzyob6klkYmtHk1fCaSshT-sbUWO0#scrollTo=6kBuQEGUyjin">Query Plan Explainer</a></li>
+              </ul>
+            </td>
+          </tr>
+
+          <!-- Week 5 -->
+          <tr>
+            <td class="wk">5</td>
+            <td class="dates">Oct 21, Oct 23</td>
+            <td class="topic">
+              <strong>Unit3: nanoDB continued</strong><br/>
+              External sorting. Join strategies. Plan tuning.
+            </td>
+           <td>
+              <span class="pill due">Oct 24 • PSET4</span>
+              <span class="pill exam">Oct 23: Guest speaker/span>
+            </td>
+            <td>
+              <ul class="links">
+                <li>Notes Sec 3: <a href="https://docs.google.com/document/d/1EDgWiSkKrc8zVKu5zDHEvmgT7y57qCRguvJqOsO5nLc/edit#heading=h.aczyuw2yex2w">Google Doc</a></li>
+                <li>Slides: <a href="https://docs.google.com/presentation/d/1PCxSEvxso0eGMBuvA7nksjegO7JeAo_FnFV8bURW-nI/edit#slide=id.g24c78bbb61e_0_32">Systems and nanoDB</a></li>
+                <li>Colabs: see Weeks 3 to 4</li>
+              </ul>
+            </td>
+          </tr>
+
+          <!-- Week 6 -->
+          <tr>
+            <td class="wk">6</td>
+            <td class="dates">Oct 28, Oct 30</td>
+            <td class="topic">
+              <strong>Review and Test 1</strong><br/>
+              In class on Thu Oct 30.
+            </td>
+            <td>
+              <span class="pill due">Oct 24 • PSET4</span>
+              <span class="pill exam">Oct 30 • Test 1</span>
+            </td>
+            <td>
+              <ul class="links">
+                <li>Coverage: Notes Sec 1 to 3</li>
+                <li>Allowed: one single sided sheet plus equation sheet</li>
+              </ul>
+            </td>
+          </tr>
+
+          <!-- Week 7 -->
+          <tr>
+            <td class="wk">7</td>
+            <td class="dates">Nov 6 (Thu only)</td>
+            <td class="topic">
+              <strong>Unit 4: Transactions</strong><br/>
+              Concurrency. Locking. Recovery. Ticketing case study.
+            </td>
+            <td>
+              <span class="pill note">Tue Nov 4 holiday</span>
+            </td>
+            <td>
+              <ul class="links">
+                <li>Notes Sec 4: <a href="https://docs.google.com/document/d/1EDgWiSkKrc8zVKu5zDHEvmgT7y57qCRguvJqOsO5nLc/edit#heading=h.aczyuw2yex2w">Google Doc</a></li>
+                <li>Slides: <a href="https://docs.google.com/presentation/d/14tYiZ7GR6xgzJf0Fm16ZTNolW_-l641vbSkg0hH8J1E/edit#slide=id.g27c15a59ac5_0_0">nanoDB Transactions</a></li>
+                <li>Colab: <a href="https://colab.research.google.com/drive/1LmKtLq05fWNgqVFVLMQO1646efR251BD">Concert Transactions</a></li>
+              </ul>
+            </td>
+          </tr>
+
+          <!-- Week 8 -->
+          <tr>
+            <td class="wk">8</td>
+            <td class="dates">Nov 11, Nov 13</td>
+            <td class="topic">
+              <strong>Unit 4: Transactions continued</strong><br/>
+              Locking vs LSM trees. Real time collaboration.
+            </td>
+            <td>
+              <span class="pill due">Nov 24 • PSET5</span>
+            </td>
+            <td>
+              <ul class="links">
+                <li>Notes Sec 4: <a href="https://docs.google.com/document/d/1EDgWiSkKrc8zVKu5zDHEvmgT7y57qCRguvJqOsO5nLc/edit#heading=h.aczyuw2yex2w">Google Doc</a></li>
+                <li>Slides and Colab: see Week 7</li>
+              </ul>
+            </td>
+          </tr>
+
+          <!-- Week 9 -->
+          <tr>
+            <td class="wk">9</td>
+            <td class="dates">Nov 18, Nov 20</td>
+            <td class="topic">
+              <strong>Unit 5: Distributed Systems</strong><br/>
+              Sharding. Replication. Global consistency. Guest Spanner talk.
+            </td>
+            <td>
+              <span class="pill due">Nov 21 • Project 2 (Data Science)</span>
+              <span class="pill due">Nov 18: Guest speaker</span>
+
+            </td>
+            <td>
+              <ul class="links">
+                <li>Notes Sec 5: <a href="https://docs.google.com/document/d/1EDgWiSkKrc8zVKu5zDHEvmgT7y57qCRguvJqOsO5nLc/edit#heading=h.aczyuw2yex2w">Google Doc</a></li>
+                <li>Slides: <a href="https://docs.google.com/presentation/d/1gEuipZQtyIEOvB917nQ1rUEdBLoI5aUJq7chw7DDUnc/edit#slide=id.g27c15a59ac5_0_0">Distributed Systems</a></li>
+                <li>Project 2: <a href="https://docs.google.com/presentation/d/14tYiZ7GR6xgzJf0Fm16ZTNolW_-l641vbSkg0hH8J1E/edit#slide=id.g27c15a59ac5_0_0">Slides</a> •
+                    <a href="https://drive.google.com/file/d/1AENIGOAe5uOvJ6nA5_jagS3pUnUr_VLa/view?usp=drive_link">Draft</a> •
+                    <a href="https://sites.google.com/view/cs145-projects-fa24/home">Hub</a></li>
+              </ul>
+            </td>
+          </tr>
+
+          <!-- Week 10 -->
+          <tr>
+            <td class="wk">10</td>
+            <td class="dates">Nov 25 (Tue only)</td>
+            <td class="topic">
+              <strong>Distributed Systems wrap up</strong><br/>
+              Lessons from industry.
+            </td>
+            <td>
+              <span class="pill due">Dec 1 • Project 2 (Data Systems)</span>
+              <span class="pill note">Nov 27 • Thanksgiving no class</span>
+            </td>
+            <td>
+              <ul class="links">
+                <li>Notes Sec 5: <a href="https://docs.google.com/document/d/1EDgWiSkKrc8zVKu5zDHEvmgT7y57qCRguvJqOsO5nLc/edit#heading=h.aczyuw2yex2w">Google Doc</a></li>
+                <li>Slides: <a href="https://docs.google.com/presentation/d/1gEuipZQtyIEOvB917nQ1rUEdBLoI5aUJq7chw7DDUnc/edit#slide=id.g27c15a59ac5_0_0">Distributed Systems</a></li>
+              </ul>
+            </td>
+          </tr>
+
+                    <!-- Week 11 -->
+          <tr>
+            <td class="wk">10</td>
+            <td class="dates"> Dec 2, Dec 4)</td>
+            <td class="topic">
+              <strong> Dec 2: Guest speaker </strong><br/>
+              Lessons from industry.
+            </td>
+            <td>
+              <span class="pill due">Dec 2 Guest speaker</span>
+              <span class="pill note"></span>
+            </td>
+            <td>
+              <ul class="links">
+                <li>Notes Sec 5: <a href="https://docs.google.com/document/d/1EDgWiSkKrc8zVKu5zDHEvmgT7y57qCRguvJqOsO5nLc/edit#heading=h.aczyuw2yex2w">Google Doc</a></li>
+                <li>Slides: <a href="https://docs.google.com/presentation/d/1gEuipZQtyIEOvB917nQ1rUEdBLoI5aUJq7chw7DDUnc/edit#slide=id.g27c15a59ac5_0_0">Distributed Systems</a></li>
+              </ul>
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      <p>Source: Navigating CS145 in Fall 24</p>
+    </footer>
+  </div>
+</body>
+</html>
