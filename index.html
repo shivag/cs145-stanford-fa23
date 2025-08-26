@@ -74,6 +74,38 @@
       text-align: center;
       border-top: 1px solid var(--stroke);
     }
+    /* CS145 Fall 2025 Branding Bar */
+    .branding-bar {
+      width: 100%;
+      background: linear-gradient(135deg, #0f766e 0%, #0891b2 100%);
+      color: white;
+      padding: 24px 0;
+      box-shadow: 0 4px 12px rgba(15, 118, 110, 0.3);
+    }
+    
+    .branding-content {
+      max-width: 90%;
+      margin: 0 auto;
+      padding: 0 30px;
+      text-align: center;
+    }
+    
+    .course-title {
+      margin: 0;
+      font-size: 48px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .course-subtitle {
+      margin: 8px 0 0 0;
+      font-size: 18px;
+      font-weight: 400;
+      opacity: 0.95;
+      letter-spacing: 0.5px;
+    }
+    
     /* Unified top bar */
     .topbar {
       width: 100%;
@@ -105,6 +137,14 @@
 </head>
 
 <body>
+  <!-- CS145 Fall 2025 Branding Bar -->
+  <div class="branding-bar">
+    <div class="branding-content">
+      <h1 class="course-title">CS 145</h1>
+      <p class="course-subtitle">Fall 2025 • Intro to Big Data Systems</p>
+    </div>
+  </div>
+  
   <div class="topbar">
     <ul class="nav-links">
       <li><a href="index.html" class="active">Course Home</a></li>
@@ -113,9 +153,12 @@
   </div>
   <div class="wrap">
 
-    <section class="head">
-      <h1 class="title">CS 145 — Fall 2025</h1>
-      <p class="sub">Intro to Big Data Systems • Tues/Thurs 4:30 PM - 5:50 PM</p>
+    
+
+    <section class="card">
+      <div>
+
+      <h1 class="title">Course Overview</h1>
       <div class="chips">
         <span class="chip pri">SQL</span>
         <span class="chip pri">Systems</span>
@@ -123,11 +166,6 @@
         <span class="chip pri">Transactions</span>
         <span class="chip pri">Distributed Systems</span>
       </div>
-    </section>
-
-    <section class="card">
-      <div>
-        <h2 style="margin-top: 0; color: var(--text);">Course Overview</h2>
         <p>This course covers how to build data applications, and key principles on how to build and scale big data systems. Taught by <a href="https://www.linkedin.com/in/shiva-shivakumar-902a681b/">Shiva Shivakumar</a>.</p>
         
         <p>A few key topics:</p>
@@ -187,7 +225,7 @@
     </section>
 
     <footer>
-      <p style="margin: 0;">Copyright &copy; Stanford University 2024</p>
+      <p style="margin: 0;">Copyright &copy; Stanford University 2025</p>
     </footer>
   </div>
 </body>
