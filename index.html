@@ -10,7 +10,7 @@
     .wrap {
       max-width: 75%;
       margin: 40px auto;
-      padding: 0 60px; /* increased padding */
+      padding: 0 60px; /* more horizontal padding */
     }
     .head {
       margin-bottom: 30px;
@@ -19,7 +19,7 @@
       margin-bottom: 30px;
     }
     .card > div {
-      padding: 40px; /* more spacing inside each card */
+      padding: 40px; /* more inner spacing */
     }
     .chips {
       margin-top: 15px;
@@ -75,7 +75,7 @@
       border-top: 1px solid var(--stroke);
     }
 
-    /* CS145 Fall 2025 Branding Bar */
+    /* Branding */
     .branding-bar {
       width: 100%;
       background: linear-gradient(135deg, #475569 0%, #64748b 100%);
@@ -104,7 +104,7 @@
       letter-spacing: 0.5px;
     }
 
-    /* Course Materials button style */
+    /* Course Materials button */
     .course-materials-link {
       display: inline-block;
       margin-top: 20px;
@@ -112,7 +112,7 @@
       font-size: 16px;
       font-weight: 600;
       color: white;
-      background: #2563eb; /* blue button */
+      background: #2563eb;
       border-radius: 8px;
       text-decoration: none;
       transition: background 0.3s ease;
@@ -120,39 +120,11 @@
     .course-materials-link:hover {
       background: #1d4ed8;
     }
-
-    /* Top bar */
-    .topbar {
-      width: 100%;
-      background: var(--panel);
-      border-bottom: 1px solid var(--stroke);
-      padding: 10px 16px;
-    }
-    .topbar .nav-links {
-      display: flex;
-      gap: 16px;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      justify-content: flex-end;
-      align-items: center;
-      font-size: 14px;
-    }
-    .topbar .nav-links a {
-      color: var(--pri);
-      text-decoration: none;
-      font-weight: 500;
-      padding: 6px 12px;
-      border-radius: 6px;
-      transition: background-color 0.2s;
-    }
-    .topbar .nav-links a:hover { background-color: #f0f9ff; text-decoration: none; }
-    .topbar .nav-links a.active { background-color: var(--pri); color: #fff; }
   </style>
 </head>
 
 <body>
-  <!-- CS145 Fall 2025 Branding Bar -->
+  <!-- Branding -->
   <div class="branding-bar">
     <div class="branding-content">
       <h1 class="course-title">CS 145</h1>
@@ -160,6 +132,7 @@
     </div>
   </div>
       
+  <!-- Course Overview -->
   <section class="card wrap">
     <div>
       <h1 class="title">Course Overview</h1>
@@ -188,5 +161,60 @@
       <a class="course-materials-link" href="https://cs145-bigdata.web.app/">📘 Course Materials</a>
     </div>
   </section>
+
+  <!-- Course Logistics -->
+  <section class="card wrap">
+    <div>
+      <h2>Course Logistics and Policies</h2>
+      <ol>
+        <li><b>Prereqs:</b> You should be able to read python code. </li>
+        <li><b>Soft prereqs:</b> cs161 and cs111. You should have some familiarity with OS, algorithms and complexity in RAM. We focus on extending these to non-RAM when data does not fit. Why these pre-reqs? We want to help you figure out when is the right time for you to take the class. Students (in previous years) without this background, tended to get lost. E.g., we assume you know how SortMerge works in RAM, what is complexity of Sorting n values in RAM, and the idea of paging data between RAM and disk. cs145's goal is focused on 100-1000x bigger data problems.   </li>
+        <li><b>Audience:</b> cs145 is about how to use and BUILD data systems. cs145 is not a SQL only class. We spend 66% of our time on how data systems are built. If you're looking for a "how to use a DB" or SQL ONLY class, you may find a better match with the data science course MSE sometimes offers.</li>
+        <li><b>Conflict in exams or course schedule</b> 
+          <ul> 
+            <li>It's a big class. We will <b>not</b> accommodate alternate exam schedules for those who have exam conflicts (both midterm and final). </li>
+            <li>For OAE accomodations, the tests will be on the <b>same day</b>, but with extended hours.</li>
+            <li>Please make sure you do not have a conflict in exam schedules when enrolling in CS 145. </li>
+          </ul>
+        </li>
+        <li><b>Mandatory attendance</b> You must attend at least 3 of the four guest lectures in class. See schedule. (Inclass short quiz) (Not for SCPD)</li>
+        <li><b>Grading base</b> 
+          <ol> 
+            <li><b>Exam #1:</b> 20%, <b>Exam #2:</b> 30% </li>
+            <li><b>Project1:</b> 10%, <b>Project2:</b> 25%</li>
+            <li><b>PSETs:</b> 12%, <b>Guest Lectures:</b> 3% </li>
+            <li><b>Extra credit:</b> Upto 2% teaching team discretion, for students with insightful in-class and Ed participation. Review the Gradescope - Extra credit for instructions. </li>
+            <li>A+ > 97%, A > 93%, A- > 90%, B+ > 87%, B > 83%, B- > 80%, C+ > 77%, C > 73%, C- > 70%, D+ > 67%, D > 63%, D- > 60%, F < 60%</li>
+            <li>For credit/no-credit, you need to score equivalent to at least a C- grade to pass the course.</li>
+          </ol>
+        </li>
+        <li><b>Canvas, Ed, Gradescope</b>: Lecture videos will be posted on <a href="https://canvas.stanford.edu/">Canvas</a>. Also, please access course Ed, Gradescope, Office Hour schedules on Canvas.</li>
+        <li><b>Audit requests (Stanford only)</b> For audit requests and access to internal tools, please fill <a href="https://forms.gle/XaiASw57q56USvpt6">form</a></li>
+        <li><b>Timings and Late Days</b> 
+          <ol>
+            <li>Projects and PSETs are due at 11:59 PM on the due date. </li>
+            <li>For PSETs, no late days, unfortunately. Each Section builds on the last. Solutions are released on time so the full class can stay on pace.</li>
+            <li>For projects, you can use a total of <b>two</b> late days (24 hours each, not pro-rated) shared between both project deadlines. You do not lose any credit when using a late day. If you run out of late days and need additional time, you can submit after the deadline -- you will receive a 10% deduction for the 1st 24 hours after the deadline, 25% deduction for the next 24 hours, and zero credit after that. It's by 24 hours, no proration (for seconds, hours, etc)</li>
+          </ol>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Honor Code -->
+  <section class="card wrap">
+    <div>
+      <h2>Honor Code/Collaboration Policy</h2>
+      <p>Students must adhere to <a href="https://communitystandards.stanford.edu/policies-and-guidance/honor-code">The Stanford Honor Code</a> and <a href="http://web.stanford.edu/class/archive/cs/cs106b/cs106b.1164/handouts/honor-code.pdf">The Stanford Honor Code</a> as it pertains to CS courses.</p>
+      <p>We encourage students to form study groups. Students may discuss and work on homework problems in groups. However, each student must write down the solution independently, and without referring to written notes from the joint session.</p>
+      <p>It is an honor code violation to copy, refer to, or look at written or code solutions from a previous year, including but not limited to: official solutions from a previous year, solutions posted online, and solutions you or someone else may have written up in a previous year. Furthermore, it is an honor code violation to post your assignment solutions online, such as on a public git repo.</p>
+      <p>The teaching staff will be using plagiarism detection software and if we have reason to believe that you are in violation of the honor code, we will follow the university policy to report it.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p style="margin: 0;">Copyright &copy; Stanford University 2025</p>
+  </footer>
 </body>
 </html>
